@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Copy Tone Mapping Tool</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Site Css -->
+    <link href="css/site.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">COPY TONE MAPPING TOOL</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="normalTones.html">normal tones</a></li>
+                    <li><a href="exclusiveTones.html">exclusive tones</a></li>
+                    <li><a href="reports.html">reports</a></li>
+                    <li class="active"><a href="settings.html">Settings</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <section class="container">
+        <h4>edit user</h4>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="inputEditUsername">username</label>
+                    <input type="text" name="editUsername" id="inputEditUsername" class="form-control" value="Mohamed Mokhar" title="username">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="inputEditUserPw">Password</label>
+                    <input type="password" name="editUserPw" id="inputEditUserPw" class="form-control" value="mokjhsgf125" title="user password">
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <button type="button" class="btn btn-primary pull-right">Save</button>
+        </div>
+    </section>
+    <div class="table-responsive container">
+        <h4>accessible pages</h4>
+        <table class="table table-striped">
+            <thead class="bg-primary">
+                <tr>
+                    <th>Page</th>
+                    <th>Can View</th>
+                    <th>Can Edit</th>
+                    <th>Can Delete</th>
+                    <th>All</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal Tones</td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canViewNormalTones" checked value="can view normal tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canEditnormalTones" value="can edit normal tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canDeletenormalTones" value="can delete normal tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="AllnormalTones" value="all normal tones">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Exclusive Tones</td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canViewExclusiveTones" value="can view exclusive tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canEditExclusiveTones" value="can edit exclusive tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canDeleteExclusiveTones" value="can delete exclusive tones">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="allExclusiveTones" value="all exclusive tones">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Reports</td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canViewReports" checked value="can view reports">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canEditReports" value="can edit reports">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canDeleteReports" value="can delete reports">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="allReports" value="all reports">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Settings</td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canViewSettings" value="can view settings">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canEditSettings" value="can edit settings">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="canDeleteSettings" value="can delete settings">
+                        </label>
+                    </td>
+                    <td>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="allSettings" value="all settings">
+                        </label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p class="center-block text-center">All copy rights are reserved to <a href="http://victorylink.com/" title="victorylink">VictoryLink</a></p>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Site js -->
+    <script src="js/site.js"></script>
+</body>
+
+</html>
